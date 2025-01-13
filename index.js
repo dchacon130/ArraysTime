@@ -26,6 +26,16 @@ const books = [
     }
   ]
 
+  const books2 = [
+    {
+      "year": "2025",
+      "title": "queen",
+      "autor": "Freddie Mercury"
+    }
+  ]
+
+  const bookEmpy = ['Diego', 'Alexander', 'Chacon']
+
 //Imprimir todos los libros
 console.log('* Print all books: ')
 books.forEach(book => console.log(book))
@@ -62,3 +72,34 @@ if(result !== -1){
     console.log(`Book ${yearToDelete} not found`)
 }
 
+//Unir dos arrays
+console.log('* Unir dos arrays: ')
+const allBooks = books.concat(books2)
+console.log(allBooks)
+
+//Busca el index de un campo
+console.log('* Index Of: ')
+const valueToSearch = 'Diego'
+const resultIndexOf = bookEmpy.indexOf(valueToSearch)
+if(resultIndexOf !== -1){
+  console.log(`# of posicion: ${resultIndexOf}`)
+}else{ 
+  console.log(`Book ${valueToSearch} not found`)
+}
+
+//Array reverse
+console.log('* Reverse Array: ')
+const reversed = bookEmpy.reverse()
+console.log(`Array reverse: ${reversed}`)
+
+//Sin el primer elemento
+console.log('* Shift: ')
+const withoutFirstElement = bookEmpy.shift()
+console.log(`Sin el primer elemento: ${withoutFirstElement}`)
+console.log(bookEmpy)
+
+//Ordenar arreglos
+console.log('* Order by: ')
+bookEmpy.unshift('Emmily', 'Claudia')
+books.sort()
+console.log(bookEmpy)
