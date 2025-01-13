@@ -1,0 +1,25 @@
+{
+  "name": "arraystime",
+  "version": "1.0.0",
+  "description": "Manipulacion de arrays usando javascript",
+  "keywords": [
+    "Fullstack",
+    "path",
+    "javascript"
+  ],
+  "homepage": "https://github.com/dchacon130/ArraysTime#readme",
+  "bugs": {
+    "url": "https://github.com/dchacon130/ArraysTime/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dchacon130/ArraysTime.git"
+  },
+  "license": "ISC",
+  "author": "Diego Chacon",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
